@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 12, 2018 at 03:52 PM
+-- Generation Time: Jul 12, 2018 at 04:39 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 7.2.5
 
@@ -196,9 +196,7 @@ CREATE TABLE `languages` (
 --
 
 INSERT INTO `languages` (`id`, `abbr`, `name`, `currency`, `currencyKey`, `flag`) VALUES
-(1, 'bg', 'bulgarian', 'лв', 'BGN', 'bg.jpg'),
-(2, 'en', 'english', '$', 'USD', 'en.jpg'),
-(3, 'gr', 'greece', 'EUR', 'EUR', 'gr.png');
+(2, 'en', 'english', 'N', 'USD', 'en.jpg');
 
 -- --------------------------------------------------------
 
@@ -404,7 +402,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `notify`, `last_login`) VALUES
 (1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'your@email.com', 0, 1531400734),
-(2, 'scott', '21f63c6e971cd913a9c147e8652ca659', 'scott', 0, NULL),
+(2, 'scott', '21f63c6e971cd913a9c147e8652ca659', 'scotteazra@gmail.com', 0, NULL),
 (3, 'mary', 'b8e7be5dfa2ce0714d21dcfc7d72382c', '', 0, NULL);
 
 -- --------------------------------------------------------
@@ -441,10 +439,10 @@ CREATE TABLE `value_store` (
 INSERT INTO `value_store` (`id`, `thekey`, `value`) VALUES
 (1, 'sitelogo', 'NewLogo.jpg'),
 (2, 'navitext', ''),
-(3, 'footercopyright', 'Powered by ECC FZE © All right reserved. '),
+(3, 'footercopyright', 'Powered by Faith Philemon'),
 (4, 'contactspage', 'Hello dear client'),
 (5, 'footerContactAddr', ''),
-(6, 'footerContactEmail', 'support@shop.dev'),
+(6, 'footerContactEmail', 'philemonfaith@gmail.com'),
 (7, 'footerContactPhone', ''),
 (8, 'googleMaps', '42.671840, 83.279163'),
 (9, 'footerAboutUs', ''),
@@ -453,7 +451,7 @@ INSERT INTO `value_store` (`id`, `thekey`, `value`) VALUES
 (12, 'footerSocialGooglePlus', ''),
 (13, 'footerSocialPinterest', ''),
 (14, 'footerSocialYoutube', ''),
-(16, 'contactsEmailTo', 'contacts@shop.dev'),
+(16, 'contactsEmailTo', 'contacts@maryshishi.com'),
 (17, 'shippingOrder', '1'),
 (18, 'addJs', ''),
 (19, 'publicQuantity', '0'),
@@ -461,7 +459,7 @@ INSERT INTO `value_store` (`id`, `thekey`, `value`) VALUES
 (21, 'paypal_sandbox', '0'),
 (22, 'publicDateAdded', '0'),
 (23, 'googleApi', ''),
-(24, 'template', 'redlabel'),
+(24, 'template', 'greenlabel'),
 (25, 'cashondelivery_visibility', '1'),
 (26, 'showBrands', '0'),
 (27, 'showInSlider', '0'),
